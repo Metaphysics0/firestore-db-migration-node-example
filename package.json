@@ -1,0 +1,22 @@
+{
+  "name": "firebase-migration-node",
+  "version": "1.0.0",
+  "description": "### What is this repo for?",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "migrate:make": "./scripts/core/migrate_make.sh",
+    "migrate:latest": "export $(cat .env | xargs) && tsx ./scripts/core/migrateLatest.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.9",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "firebase": "^11.0.1",
+    "glob": "^11.0.0"
+  }
+}
